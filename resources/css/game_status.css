@@ -1,0 +1,39 @@
+#mainContainer{
+	margin-top: 30px;
+	height: 100%;
+
+}
+
+#timerCol{
+	text-align: center;
+	height: 100px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+#playersColContainer{
+	height: 350px;
+	padding-top: 20px;
+}
+
+#endGameButton{
+	width: 200px;
+}
+
+.centering{
+	float:none;
+	margin:0 auto
+}
+
+.center-text{
+	text-align: center;
+}
+
+.playerCol{
+	height: 250px;
+	width: 250px;
+	padding-top: 10px;
+	text-align: center;
+	margin: 10px;
+	border: solid 1px;
+}

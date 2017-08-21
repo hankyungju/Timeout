@@ -1,0 +1,71 @@
+<html>
+
+<head>
+	<title>Timeout</title> 
+ <!-- Compiled and minified CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  <link rel="stylesheet" href="resources/css/home_m.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+   var config = {
+      apiKey: "",
+      authDomain: "",
+      databaseURL: "",
+      projectId: "",
+      storageBucket: "",
+      messagingSenderId: ""
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="resources/js/index.js"></script>
+
+  <style>
+  		.blue{
+  			background: blue;
+  		}
+  		.red{
+  			background: red;
+  		}
+  </style>
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<br>
+			<br>
+			<div class="col s12 center">
+				<img id="game_logo" class="responsive" src="resources/images/timeoutlogo2.png">
+			</div>
+		</div>
+			<br>
+			<br>
+			<br>
+		<div class="row">
+        <div class="input-field  col s12">
+              <input placeholder="ex. 99999" id="first_name" type="text" class="validate">
+              <label for="first_name">Player Name:</label>
+        </div>
+        <div class="input-field  col s12">
+  	          <input placeholder="ex. 99999" id="room_code" type="text" class="validate">
+  	          <label for="room_code">Room Code:</label>
+        </div>
+        <div class="col center s12">
+            	  <a class="waves-effect waves-light btn" onclick="storePlayerAndRoomDetails()" >JOIN ROOM</a>
+        </div>
+    </div>
+
+	</div>
+
+</body>
+
+
+</html>

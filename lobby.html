@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Timeout</title>
+	<link rel="shortcut icon" type="image/png" href="resources/images/bomb.png"/>
+	<link href="resources/css/lobby.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Copse|Roboto" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	   var config = {
+	  	    apiKey: "",
+	  	    authDomain: "",
+	  	    databaseURL: "",
+	  	    projectId: "",
+	  	    storageBucket: "",
+	  	    messagingSenderId: ""
+	  	  };
+	  firebase.initializeApp(config);
+	</script>
+	<script src="resources/js/index.js"></script>
+
+	<script type="text/javascript">
+		function btnClick(btn_id){
+			alert(btn_id);
+		}
+
+
+		function myFunction() {
+			var x = document.getElementById("name_txt").value;
+			document.getElementById("demo").innerHTML = x;
+		}
+
+	</script>
+
+  </head>
+
+	<body onload="createRoom();"class="body">
+		<br/>
+		
+		<div class="main-content">
+		
+		</div>
+		<div class="container">
+			
+			<br/> <br/>
+			
+			<h1 id="textToGuess" style="font-family: 'Copse', serif; font-size: 50px; text-align: center;">
+			Waiting for other players...
+			</h1>
+			
+			<h1 id="timer" style="font-family: 'Copse', serif; text-align: center;">
+			Access code: <i id="accessCode_i"></i>
+			</h1>
+			<h5 style="font-family: 'Copse', serif; text-align: center;">
+			Open <b>https://goo.gl/3uVEj2</b> in your mobile Chrome browser and enter code
+			</h5>
+
+			<br/>
+
+			<hr>
+			
+			<br/>
+			
+			<ol id="lobby_playerList" class="lobby-player-list">
+
+			</ol>
+
+			<br/> <br/>
+			
+			<div class="buttons centerthis">
+				<a  class="button button1" style="margin-right:16px;" onClick="startGame()">Start Game</a>
+				<a href="home.html" class="button button1">Leave Game</a> <br/> <br/>
+				
+				<p id="demo"></p>
+			</div>
+			
+			
+			<hr>
+
+			<p style=" position: absolute; bottom: 0; left: 0; width: 100%; text-align: center;">
+			Copyright©2017. All Rights Reserved. Google MAD. <br/>
+			2401 Taft Avenue, 1004 Manila, Philippines
+			</p>
+			
+		</div> <!-- /container -->
+		<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	</body>
+
+</html>

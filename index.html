@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Timeout</title>
+	<script>
+
+		function load_homepage(device){
+			if(device == "desktop")
+				window.location.href = 'home.html';
+			else
+				window.location.href = 'home_m.html';//window.location.href = '.html';
+		}
+		var isMobile = window.orientation > -1;
+		if(!isMobile){
+			//load desktop homepage
+			console.log("DEKSTOP");
+			load_homepage("desktop");
+		}else{
+			//load mobile homepage
+			console.log("MOBILE");
+			load_homepage("mobile");
+		}
+	</script>
+
+</head>
+
+
+</html>

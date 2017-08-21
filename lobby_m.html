@@ -1,0 +1,82 @@
+<html>
+
+<head>
+	<title>Timeout</title> 
+ <!-- Compiled and minified CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  <link rel="stylesheet" href="resources/css/lobby_m.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "",
+        authDomain: "",
+        databaseURL: "",
+        projectId: "",
+        storageBucket: "",
+        messagingSenderId: ""
+      };
+    firebase.initializeApp(config);
+  </script>
+  <script src="resources/js/index.js"></script>
+
+  <style>
+  		.blue{
+  			background: blue;
+  		}
+  		.red{
+  			background: red;
+  		}
+
+  		.container{
+  			height: 100%;
+  			width: 100%;
+  		}
+  </style>
+
+</head>
+
+<body>
+	<div class="valign-wrapper">
+	<div class="container">
+		<div class="row">
+			<br>
+			<br>
+			<br>
+			<div class="col s12 center">
+				<h3>Waiting for other players...</h3> 
+				<h4>In room</h4>
+				<h3 id="room_no"></h3>
+				<div class="row">
+					<div class="col offset-s4 s4">
+						<ol id="lobby_playerList" class="lobby-player-list">
+
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+			<br>
+		<div class="row">
+          <div class="col center s12">
+          	  <a class="waves-effect waves-light btn" href="home_m.html">Leave Game</a>
+          </div>
+		</div>
+	</div>
+	</div>
+
+	<script>
+		joinRoom();
+	</script>
+
+</body>
+
+
+</html>

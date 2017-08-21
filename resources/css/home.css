@@ -1,0 +1,42 @@
+	
+		.centerthis {
+			text-align: center;
+		}
+
+		.button {
+			background-color: #FDE76C ; /* Yellow Pastel */
+			border: none;
+			border-radius: 12px;
+			color: white;
+			padding: 15px 32px;
+			width: 200px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-family: 'Copse', serif;
+			font-size: 25px;
+			margin: 4px 2px;
+			cursor: pointer;
+			transition: all 0.5s;
+		}
+		
+		.button1 {
+			background-color: #FDE76C ; /* Yellow Pastel */
+			color: white;
+		}
+		
+
+		.button1:hover {
+			background-color: white; 
+			color: black; 
+			border: 2px solid #FDE76C;
+		}
+
+		.body {
+			/*background-image: url("background.jpg");*/
+			/*min-height: 500px;*/
+			/*background-attachment: fixed;*/
+    		/*background-position: center;*/
+    		/*background-repeat: no-repeat;*/
+    		/*background-size: cover;*/
+		}
